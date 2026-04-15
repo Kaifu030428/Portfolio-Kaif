@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MD Kaif - Web Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#timeline">Activities</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-dual">
+
+        <!-- LEFT: TEXT PANEL -->
+        <div class="panel hero-panel">
+
+          <div class="identity-label">DEVELOPER PROFILE</div>
+
+          <h1 class="cosmic-title">
+            <span>M</span><span>D</span>
+            <br>
+            <span>K</span><span>A</span><span>I</span><span>F</span>
+          </h1>
+
+          <p class="hero-role">
+            Aspiring Software Engineer · MERN Stack Developer · Problem Solver
+          </p>
+
+          <p class="hero-desc">
+            I build modern web applications and interactive digital experiences with a focus on clean UI, scalable
+            backend systems, and real-world problem solving.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn primary" href="#projects">VIEW PROJECTS</a>
+            <a class="btn ghost" href="#contact">CONTACT</a>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: FLOATING PORTRAIT -->
+        <div class="portrait-module">
+
+          <div class="portrait-orb">
+            <img src="" class="hero-img">
+            <img src="WhatsApp Image 2025-08-04 at 22.27.53.jpeg" alt="">
+          </div>
+
+          <div class="orb-label">MD KAIF</div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <div id="orb"></div>
+    <div id="trail-container"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="panel about-panel">
+        <h2>About Me</h2>
+
+        <div class="about-console">
+          <p id="about-text"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+      <h2 class="skills-title">SKILLS</h2>
+      <div class="skill-field" id="skillField">
+
+        <!-- SKILL BUTTONS -->
+        <div class="skill-btn">C++</div>
+        <div class="skill-btn">JavaScript</div>
+        <div class="skill-btn">DSA</div>
+        <div class="skill-btn">OOP</div>
+
+        <div class="skill-btn">HTML5</div>
+        <div class="skill-btn">CSS3</div>
+        <div class="skill-btn">Tailwind CSS</div>
+        <div class="skill-btn">React.js</div>
+
+        <div class="skill-btn">Node.js</div>
+        <div class="skill-btn">Express.js</div>
+        <div class="skill-btn">MongoDB</div>
+        <div class="skill-btn">REST APIs</div>
+
+        <div class="skill-btn">Git</div>
+        <div class="skill-btn">GitHub</div>
+        <div class="skill-btn">VS Code</div>
+
+        <div class="skill-btn">Problem Solving</div>
+        <div class="skill-btn">Communication</div>
+        <div class="skill-btn">Team Collaboration</div>
+
+      </div>
+
+    </section>
+    <!-- skill end -->
+    <!-- PROJECTS -->
+    <section id="projects">
+
+      <h2 class="proj-title">PROJECTS</h2>
+
+      <div class="wheel-wrapper">
+        <div class="wheel">
+          <!-- CARD 1 -->
+          <div class="card">
+            <h3>Snake Game</h3>
+
+            <div class="mini">
+              <p>Classic Snake Game built with interactive gameplay logic and real-time score tracking.</p>
+
+              <div class="actions">
+                <a href="https://github.com/Kaifu030428/SnakeGame" target="_blank">View Code ↗</a>
+                <button class="view-more" data-modal="modal1" type="button">View More</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- CARD 2 -->
+          <div class="card">
+            <h3>DogStudio Clone</h3>
+
+            <div class="mini">
+              <p>Pixel-perfect frontend clone of DogStudio with advanced animations and smooth scrolling effects.</p>
+
+              <div class="actions">
+                <a href="https://github.com/Kaifu030428/DogStudio-Clone" target="_blank">View Code ↗</a>
+                <button class="view-more" data-modal="modal2" type="button">View More</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- CARD 3 -->
+          <div class="card">
+            <h3>Fitness Tracker</h3>
+
+            <div class="mini">
+              <p>Fitness tracking application for monitoring workouts, calories, and personal progress.</p>
+
+              <div class="actions">
+                <a href="https://github.com/Kaifu030428/FitnessTracker" target="_blank">View Code ↗</a>
+                <button class="view-more" data-modal="modal3" type="button">View More</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- CARD 4 -->
+          <div class="card">
+            <h3>AI Powered Interview Platform</h3>
+
+            <div class="mini">
+              <p>AI-driven mock interview platform with personalized questions and instant feedback.</p>
+
+              <div class="actions">
+                <a href="https://github.com/Kaifu030428/AI-powered-interview" target="_blank">View Code ↗</a>
+                <button class="view-more" data-modal="modal4" type="button">View More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ADD MORE PROJECT CARDS SAME WAY -->
+
+        </div>
+      </div>
+
+      <!-- ===== MODALS ===== -->
+      <!-- MODAL 1 -->
+      <div class="modal" id="modal1">
+        <div class="modal-content modal-card">
+          <button class="modal-close" type="button">&times;</button>
+
+          <h2>Snake Game</h2>
+
+          <p>
+            Developed a classic Snake Game featuring smooth directional controls,
+            collision detection, score tracking, and dynamic snake growth mechanics.
+          </p>
+
+          <p>
+            This project strengthened my understanding of game logic, event handling,
+            state management, and real-time rendering while implementing core programming concepts.
+          </p>
+
+          <p><b>Tech Stack:</b> JavaScript, HTML, CSS</p>
+
+          <p>
+            <a href="https://github.com/Kaifu030428/SnakeGame" target="_blank">
+              View Code ↗
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- MODAL 2 -->
+      <div class="modal" id="modal2">
+        <div class="modal-content modal-card">
+          <button class="modal-close" type="button">&times;</button>
+
+          <h2>DogStudio Clone</h2>
+
+          <p>
+            Built a high-fidelity frontend clone of the DogStudio website,
+            recreating its modern visual design, smooth animations, and immersive user experience.
+          </p>
+
+          <p>
+            This project helped strengthen my frontend development skills through
+            responsive layouts, animation handling, and precise UI implementation.
+          </p>
+
+          <p><b>Tech Stack:</b> HTML, CSS, JavaScript / React (update based on actual stack)</p>
+
+          <p>
+            <a href="https://github.com/Kaifu030428/DogStudio-Clone" target="_blank">
+              View Code ↗
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- MODAL 3 -->
+      <div class="modal" id="modal3">
+        <div class="modal-content modal-card">
+          <button class="modal-close" type="button">&times;</button>
+
+          <h2>Fitness Tracker</h2>
+
+          <p>
+            Developed a fitness tracking application that enables users to monitor workouts,
+            manage fitness goals, and track overall progress through an intuitive interface.
+          </p>
+
+          <p>
+            This project enhanced my understanding of state management, user input handling,
+            and designing practical applications focused on real-world usability.
+          </p>
+
+          <p><b>Tech Stack:</b> JavaScript, HTML, CSS / React (update if needed)</p>
+
+          <p>
+            <a href="https://github.com/Kaifu030428/FitnessTracker" target="_blank">
+              View Code ↗
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- MODAL 4 -->
+      <div class="modal" id="modal4">
+        <div class="modal-content modal-card">
+          <button class="modal-close" type="button">&times;</button>
+
+          <h2>AI Powered Interview Platform</h2>
+
+          <p>
+            Developed an AI-powered mock interview platform that generates personalized
+            interview questions based on user-selected roles and provides intelligent feedback
+            to improve interview performance.
+          </p>
+
+          <p>
+            The platform simulates realistic interview experiences, helping users practice
+            technical and behavioral interviews while receiving actionable insights for improvement.
+          </p>
+
+          <p><b>Tech Stack:</b> Next.js, Tailwind CSS, Gemini API, PostgreSQL, Drizzle ORM</p>
+
+          <p>
+            <a href="https://github.com/Kaifu030428/AI-powered-interview" target="_blank">
+              View Code ↗
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section id="timeline">
+      <div class="panel timeline-panel">
+        <h2 class="timeline-title">HACKATHONS & DEVELOPMENT</h2>
+
+        <div class="strip">
+          <h3>Development Focus</h3>
+          <div class="scroll-row timeline-experience"></div>
+        </div>
+
+        <div class="strip">
+          <h3>Hackathons</h3>
+          <div class="scroll-row timeline-achievements"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="resume">
+      <h2 class="section-title glow-text">Resume</h2>
+
+      <div class="resume-box">
+        <p class="resume-copy">
+          Download my resume to explore my technical skills, projects, and development journey in detail.
+        </p>
+
+        <a href="Kaif_Resume.pdf" download class="resume-btn">
+          Download Resume &rarr;
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title glow-text">Contact</h2>
+
+      <div class="contact-box">
+        <h3>Connect with me</h3>
+
+        <div class="links">
+          <a href="https://github.com/Kaifu030428" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/md-kaif-b959792a9/" target="_blank">LinkedIn</a>
+        </div>
+
+        <p>Open to internships, collaborations, and software development opportunities.</p>
+
+        <div class="contact-terminal">
+          <textarea placeholder="Write your message..." class="contact-input" id="contact-message"></textarea>
+          <a id="sendBtn" class="contact-btn">Send</a>
+          <a class="contact-btn gmail-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=kaif8763@gmail.com"
+            target="_blank">
+            Open Gmail &rarr;
+          </a>
+        </div>
+
+        <p class="contact-email">
+          Or email me directly:
+          <a href="mailto:kaif8763@gmail.com">
+            kaif8763@gmail.com
+          </a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
